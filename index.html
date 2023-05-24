@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title class="title">ryzm</title>
+</head>
+<body>
+ <div class="centered">
+  <div class="brand">
+   <div class="name">ryzm</div>
+   <div class="subtitle">Backend Developer</div>
+  </div>
+  <div class="socials">
+   <a target="_blank" href="https://discord.com/users/980859238630948886" tooltip="ryzm#0003"><img src="/images/discord.svg" class="discord"></a>
+   <a target="_blank" href="https://github.com/ceeq9717" tooltip="ceeq9717"><img src="/images/github.svg" class="github"></a>
+  </div>
+  <div class="links">
+    <!-- <a target="_blank" href="/imprint.html">Imprint</a> -->
+    <a target="_blank" href="https://modfy.xyz">Modfy Discord Bot (soon)</a>
+  </div>
+ </div>
+</body>
+</html>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+ * {
+  font-family: Raleway, 'sans-serif';
+ }
+
+ :root {
+  font-family: Raleway, 'sans-serif';
+ }
+
+ body {
+  background: black;
+  width: 100%;
+ }
+
+ div.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+ }
+
+ div.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+ }
+
+ div.name {
+    color: white;
+  font-size: 7em;
+  font-weight: bold;
+ }
+
+ div.subtitle {
+    color: white;
+  font-size: 2em;
+  opacity: 70%;
+  letter-spacing: .1em;
+  text-align: center;
+ }
+
+ div.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  background: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+ }
+
+ div.projects div.title {
+  font-weight: bold;
+  font-size: 1.1em;
+ }
+
+ div.socials {
+    /* display: flex; */
+    /* flex-direction: row; */
+    column-gap: 10px;
+ }
+
+ div.socials a {
+  position: relative;
+ }
+
+ div.socials a:hover::before {
+  color: #fff;
+  background: #000;
+  content: attr(tooltip);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: fadeIn .5s ease;
+  padding: 5px;
+  border-radius: 5px;
+ }
+
+ div.socials img {
+  width: 35px;
+  height: 35px;
+ }
+
+ div.socials img.mail {
+  border-radius: 10px;
+ }
+
+ div.check-out {
+  margin-top: 10px;
+  font-weight: bold;
+ }
+
+ div.check-out a {
+  color: #0059ff;
+ }
+
+ div.links a {
+    position: position;
+    inset: auto;
+  color: white;
+  text-decoration: none;
+ }
+ div.links a:hover {
+  text-decoration: underline;
+  color: #fff;
+ }
+
+ @keyframes fadeIn {
+  0% {
+   opacity: 0%;
+   transform: translateX(-50%) translateY(5px);
+  }
+  100% {
+   opacity: 100%;
+  }
+ }
+</style>
