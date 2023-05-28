@@ -63,7 +63,24 @@
     color: white;
   font-size: 7em;
   font-weight: bold;
+  background: linear-gradient(90deg,#fadb61 0%,#ff006a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hueRotate 7s alternate infinite;
+
  }
+
+ @keyframes hueRotate {
+  0% {
+    filter: hue-rotate(279deg);
+  }
+  50% {
+    filter: hue-rotate(197deg);
+  }
+  100% {
+    filter: hue-rotate(12deg);
+  }
+}
 
  div.subtitle {
     color: white;
